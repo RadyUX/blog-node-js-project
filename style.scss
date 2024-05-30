@@ -1,0 +1,94 @@
+.app {
+    .container {
+      .auth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #b9e7e7;
+  
+        h1 {
+          font-size: 20px;
+          color: teal;
+          margin-bottom: 20px;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          width: 200px;
+          gap: 20px;
+          background-color: white;
+        }
+  
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid green;
+        }
+  
+        button {
+          padding: 10px;
+          background-color: teal;
+          border: none;
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+  
+    .navbar {
+      .container {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: aquamarine;
+  
+        .link {
+          display: flex;
+          text-decoration: none;
+          color: inherit;
+          gap: 10px;
+  
+          h6 {
+            font-size: 16px;
+          }
+  
+          span {
+            cursor: pointer;
+          }
+  
+          .write {
+            background-color: #b9e7e7;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  
+    footer {
+      margin-top: 10px;
+      padding: 20px;
+      background-color: #b9e7e7;
+    }
+  
+    .home {
+      .posts {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+      }
+    }
+  
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20
+  
+    }}
