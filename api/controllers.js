@@ -60,13 +60,11 @@ export const logout = (req, res) =>{
 
 export const getAllPost = (req,res)=>{
     
-const q = req.query.php ? "SELECT * FROM posts WHERE php=?" : "SELECT * FROM posts"
+const q = req.query.php ? "SELECT * FROM posts WHERE category=?" : "SELECT * FROM posts"
 
 db.query(q, [req.query.php], (err,data)=>{
     if(err) return res.send(err)
 
         return res.status(200).json(data)
 })
-
-
 }
