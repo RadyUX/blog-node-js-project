@@ -54,3 +54,19 @@ export const logout = (req, res) =>{
         secure: true
     }).status(200).json("user has been logged out")
 }
+
+//post 
+
+
+export const getAllPost = (req,res)=>{
+    
+const q = req.query.php ? "SELECT * FROM posts WHERE php=?" : "SELECT * FROM posts"
+
+db.query(q, [req.query.php], (err,data)=>{
+    if(err) return res.send(err)
+
+        return res.status(200).json(data)
+})
+
+
+}

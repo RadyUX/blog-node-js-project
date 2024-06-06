@@ -1,5 +1,5 @@
 import express from "express"
-import { login, register } from "./controllers.js"
+import { getAllPost, login, logout, register } from "./controllers.js"
 
 const router = express.Router()
 
@@ -10,6 +10,9 @@ router.get('/api/auth', (req, res)=>{
 
 router.post("/api/register", register)
 router.post("/api/login", login)
+router.post("/api/logout", logout)
+
+router.get("/api/posts", getAllPost)
 
 
 export default router
